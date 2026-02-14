@@ -1,4 +1,4 @@
-# 🏦 Bank Marketing Term Deposit Prediction
+# Bank Marketing Term Deposit Prediction
 
 This project is my implementation of **Machine Learning Assignment 2** using the
 **Bank Marketing** dataset from the UCI Machine Learning Repository.[web:39] It
