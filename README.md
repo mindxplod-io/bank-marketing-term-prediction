@@ -129,3 +129,20 @@ After running `model_training.py`, the metrics are saved to `model/model_results
 | Naive Bayes         |0.8203    |0.8393|0.3495     |0.6907  |0.4642|0.4009|
 | Random Forest       |0.9121    |0.9442|0.7849     |0.3028  |0.4370|0.4532|
 | XGBoost             |0.9245    |0.9548|0.7008     |0.5754  |0.6320|0.5939|
+```
+
+```markdown
+| ML Model Name       | Observation about model performance                                                       |
+|---------------------|-------------------------------------------------------------------------------------------|
+| Logistic Regression | Gives strong overall performance with good accuracy and precision,                        |
+|                     | but is a bit conservative and misses some actual subscribers (lower recall).              |
+| Decision Tree       | Slightly weaker than Logistic Regression, but a bit better at catching subscribers;       |
+|                     |however, it is less stable and more prone to noise.                                        |
+| kNN                 | Delivers okay results but clearly trails the stronger models,                             |
+|                     |struggling more with class imbalance and separating subscribers from non‑subscribers.      |
+| Naive Bayes         | Finds many true subscribers (high recall) but wrongly labels                              |
+|                     |a lot of non‑subscribers as “yes”, making it costly in terms of false positives.           |
+| Random Forest       | Very careful about predicting “yes” and usually correct when it does (high precision),    |
+|                     |but misses many potential subscribers due to low recall.                                   |
+| XGBoost             | Offers the best overall balance, with the highest accuracy and                            |
+|                     |strongest mix of precision and recall, making it the most suitable model for this problem. |
